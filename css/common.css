@@ -75,14 +75,14 @@ html,body{ -webkit-tap-highlight-color: transparent;width:100%;height:100%; }/*å
 .da_cheng_40{position:absolute;top:324px;left:39px;}
 .da_cheng_70{position:absolute;top:477px;;left:39px;}
 /*part3*/
-.dock_list{width:750px;height:200px;z-index:10; position:absolute;left:0;bottom:0;}
+.dock_list{width:750px;height:200px;z-index:1000; position:absolute;left:0;bottom:0;}
 .part3_title{width:750px;height:130px;display:flex;justify-content:center;position:absolute;top:60px;left:0px; z-index: 10;}
 
 .game_roles{width:750px;height:100%;position: absolute;left:0;top:0;}
 
 
-.game_roles .swiper-container{width:100%;height:100%;}
-.game_roles .swiper-slide{width:100%;height:100%; position: relative;}
+.game_roles .swiper-container{width:100%;height:100%; z-index: 0;}
+
 .role_img{width:750px;height:100%;z-index:1;}
 .role_img1{background:url(../images/part3_role_img01.png) center top no-repeat;background-size: cover;z-index:1;}
 
@@ -110,7 +110,7 @@ background: rgba(23,59,121,0.75);min-height:300px;z-index: 1;}
 .role_img3{background:url(../images/part3_role_img03.png) center top no-repeat;background-size: cover;z-index:1;}
 .role_img4{background:url(../images/part3_role_img04.png) center top no-repeat;background-size: cover;z-index:1;}
 .game_roles .swiper-slide-active .role_info{-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;opacity:1; z-index: 10;}
-.game_roles .swiper-slide-active .role_img{opacity:1;-webkit-transition:all 0.3s;transition:all 0.3s;z-index:1;}
+.game_roles .swiper-slide-active .role_img{opacity:1;-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 0.3s;transition:all 0.3s;z-index:1;}
 /*part4*/
 .part4_title{width:750px;height:130px;display:flex;justify-content:center;position:absolute;top:60px;left:0px;}
  .part4_fw{width:100%;height:100%;object-fit:cover; position: absolute;left:0px;top:100px; z-index:1;} 
