@@ -1,4 +1,61 @@
 
+
+
+
+
+
+$(function () {
+  var bgm = new Audio();
+    bgm.src = 'music/BGM.mp3';
+    $('body').on("click", '#bgm_icon', function () {
+      if (bgm.paused) {
+        $(this).addClass('ing')
+        bgm.play();
+      } else {
+        $(this).removeClass('ing')
+        bgm.pause();
+      }
+   });
+// IOS和安卓切换
+ $('.register_select div').click(function(){
+    $('.register_select div').children().removeClass('active');
+    $(this).addClass('active');
+    $(this).siblings('div').removeClass('active');
+  })
+
+  // 注册框里面获取焦点
+ $(".text_content1").focus(function(){
+  if($(this).val()=='휴대폰 번호를 입력 （-없이 입력)'){
+    $(this).val("")
+    }
+  });
+  $(".text_content1").blur(function(){
+  if($(this).val()==''){
+    $(this).val("휴대폰 번호를 입력 （-없이 입력)")
+  }
+  })
+
+
+//点击侧边栏
+$('body').on("click", '.menu', function () {
+  $('.sidebar_box').toggleClass('active')
+});
+$('body').on("click", '.sidebar_box .closed', function () {
+  $('.sidebar_box').removeClass('active')
+});
+});
+
+
+
+
+$('.register_yy_btn').click(function(){
+  $(' .masked').css('display','block');
+$('.tc_success_big').css('display','block');
+})
+$('.tc_main_big .closed').click(function(){
+  $(this).parent().parent().css('display','none');
+  $('.masked').css('display','none');
+})
 //点击menu弹出菜单栏
 $('body').on("click", ".part1_menu,.list_menu", function () {
   $('.nav_box').toggleClass('active');

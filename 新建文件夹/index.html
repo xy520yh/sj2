@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>手机端首页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <!--maincss-->
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/header.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <style>
+     
+    </style>
+    <script>
+    var phoneWidth =  parseInt(window.screen.width);
+		var phoneScale = phoneWidth/750;
+		var ua = navigator.userAgent;
+		if (/Android (\d+\.\d+)/.test(ua)){
+			var version = parseFloat(RegExp.$1);
+			if(version>2.3){
+				document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+			}else{
+				document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+			}
+		} else {
+			document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+
+    </script>
+</head>
+<body>
+<!--蒙层--> 
+<!-- <div class="masked" id="masked"></div> -->
+<!--菜单弹窗-->
+<div class="nav_box">
+  <div class="nav_box_main">
+      <div class="nav_top">
+          <div class="closed"><img src="images/menu_closed.png"></div>
+      </div> 
+      <div class="nav_btn">
+          <div class="nav_link">
+              <div class="link01  active link"><a href="index.html" target="_blank">HOME</a></div>
+              <div class="link02 link news"><a href="javascript:void(0)">NEWS</a></div>
+              <div class="link03 link characters" ><a href="javascript:void(0)">CHARACTERS</a></div>
+              <div class="link04 link flower"><a href="javascript:void(0)">FLOWER FAIRIES</a></div>
+              <div class="link06 link features"><a href="javascript:void(0)">FEATURES</a></div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--main-->
+<div class="swiper-container swiper-fullscreen">
+  <div class="fan_top"><img src="images/top.png"></div>
+  <div class="swiper-wrapper">
+    <!--part1-->
+    <div class="swiper-slide slide1" data-hash="slide01" >
+      <div class="main_show">
+          <div class="part1_menu"><img src="images/part1_menu.png"></div>
+          <div class="part1_logo"><img src="images/part1_logo.png"></div>
+          <div class="part1_ico">
+            <a href="https://www.facebook.com/LONGLOBAL" target="_blank"><img src="images/part1_fb.png" alt=""></a>
+            <a href="https://discord.gg/TBFDKsqUbB" target="_blank"><img src="images/part1_game.png" alt=""></a></div>
+          <div class="part1_btn">
+            <a href="https://longlobal.onelink.me/e7jh/tbodpc51" class="part1_mr" target="_blank"><img src="images/part1_app.png" alt=""></a>
+            <a href="https://longlobal.onelink.me/e7jh/tbodpc51" target="_blank"><img src="images/part1_gg.png" alt=""></a></div>
+          <div class="part1_reward"><img src="images/part1_aword.png"></div>
+      </div>
+    </div>
+    <!--part2-->
+    <div class="swiper-slide slide2" data-hash="slide02">
+      <div class="main_show">
+          <div class="part2_title"><img src="images/part2_title.png"></div>    
+          <div class="part2_register_btn"><a href="https://longlobal.onelink.me/e7jh/tbodpc51" target="_blank"><img src="images/part2_register.png"></a></div>    
+          <div class="dc_bg">
+              <div class="da_cheng_10 dc"><img src="images/part2_dc.png"></div>
+              <div class="da_cheng_20 dc"><img src="images/part2_dc.png"></div>
+              <div class="da_cheng_40 dc"><img src="images/part2_dc.png"></div>
+              <!-- <div class="da_cheng_70 dc"><img src="images/part2_dc.png"></div> -->
+          </div>
+      </div>
+    </div>
+    <!--part3-->
+    <div class="swiper-slide slide3" data-hash="slide03">
+      <div class="main_show">
+        <div class="dock_list" style="z-index:1000;">
+          <div class="swiper-container" style="z-index:1000;" >
+            <div class="swiper-wrapper"  style="z-index:1000;">
+              <div class="swiper-slide"  style="z-index:1000;"> 
+                <ul class="swiper_dock_list" style="z-index:1000;">
+                    <li style="z-index:1000;"> 
+                      <a href="javascript:void(0)"><img class="icon on" src="images/part3_small_hover_01.png"/></a>
+                    </li>
+                    <li style="z-index:1000;"> 
+                      <a href="javascript:void(0)"><img class="icon " src="images/part3_small_hover_01.png"/></a>
+                    </li>
+                    <li style="z-index:1000;">
+                      <a href="javascript:void(0)"><img class="icon" src="images/part3_small_hover_01.png"/></a>
+                    </li>
+                    <li style="z-index:1000;">
+                      <a href="javascript:void(0)"><img class="icon" src="images/part3_small_hover_01.png"/></a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="part3_title"><img src="images/part3_title.png" alt=""></div>
+       <div class="game_roles" style="z-index:1;">
+            
+        <div class="swiper-container roles_wrap">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="role_info role_info1">
+                    <h2></h2>
+                    <P>Craftsmen integrate the principles of alchemy into guns, and pour out firepower in an instant to wipe out their enemies.</P>
+                  </div>
+                  <div class="role_img1 role_img" style="z-index:1;"></div>
+                  <div class="role_before"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="role_info role_info2">
+                    <h2></h2>
+                    <P>Gladiators use the katana as their weapon and are good at close combat, showing amazing strength whirling a sharp blade!</P>
+                  </div>
+                  <div class="role_img2 role_img"></div>
+                  <div class="role_before"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="role_info role_info3">
+                    <h2></h2>
+                    <P>Rangers have unparalleled mobility and agility, they find the weakness of the enemy and move to kill in one shot!</P>
+                  </div>
+                  <div class="role_img3 role_img"></div>
+                  <div class="role_before"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="role_info role_info4">
+                    <h2></h2>
+                    <P>The magic book held in the hand contains many mysteries, allowing them to deal great damage. They are good at defeating enemies with spells from a distance.</P>
+                  </div>
+                  <div class="role_img4 role_img"></div>
+                  <div class="role_before"></div>
+                </div>
+            </div>
+        </div>
+    </div>   
+      </div>
+        
+         
+         
+        
+
+    </div>
+    <!--part4-->
+    <div class="swiper-slide slide4" data-hash="slide04">
+      <div class="main_show">
+         <!-- <div class="part4_fw"></div>  -->
+          <div class="part4_title"><img src="images/part4_title.png" /></div>
+          <div class="role">
+              <div class="list">
+                <div class="swiper-container part4_swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/part4_mzsh_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_sly_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_jg_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_zyh_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_sl_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_sc_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_ct_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_bdl_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_jzh_small.png" /></div>
+                    <div class="swiper-slide"><img src="images/part4_yjc_small.png" /></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <dl class="content">
+                  <!--曼珠沙华-->
+                <dd>
+                  <img src="images/part4_mzsh.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name">
+                      <h2>Lycoris</h2>
+                      <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Extreme Love</h3>
+                    </div> 
+                  </div>
+                </dd>
+                  <!-- 十六夜-->
+                  <dd>
+                    <img src="images/part4_sly.png" class="role_people"/>
+                    <div class="note">
+                      <div class="role_name">
+                        <h2>Chestnut Rose</h2>
+                        <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Defect</h3>
+                       
+                    </div>
+                  </dd>
+                  <!--桔梗-->
+                  <dd>
+                    <img src="images/part4_jg.png" class="role_people"/>
+                    <div class="note">
+                      <div class="role_name">
+                          <h2>Balloon Flower</h2>
+                          <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Hopeless Love</h3>
+                        
+                    </div>
+                  </dd>
+                <!--紫阳花-->
+                <dd>
+                  <img src="images/part4_zyh.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name">
+                      <h2>Hydrangea</h2> 
+                      <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Unpredictable</h3>
+         
+                  
+                  </div>
+                </dd>
+                  <!--睡莲-->
+                <dd>
+                  <img src="images/part4_sl.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name"> 
+                      <h2>Nymphaea</h2> 
+                      <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Innocence</h3>
+                   
+                  </div>
+                </dd>
+                  <!--山茶-->
+                <dd>
+                  <img src="images/part4_sc.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name"> 
+                      <h2>Camellia</h2>   
+                      <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Modest</h3>
+                      
+                  </div>
+                </dd>
+                  <!--刺桐-->
+                <dd>
+                  <img src="images/part4_ct.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name"> 
+                      <h2>Erythrina</h2>    
+                      <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Unyielding</h3>
+                     </div> 
+                  
+                  </div>
+                </dd>
+                  <!--并蒂莲-->
+                <dd>
+                  <img src="images/part4_bdl.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name"> 
+                      <h2>Twin Lotus</h2>
+                       <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Syngenesis</h3>
+                     
+                   
+                  </div>
+                </dd>
+                  <!--金盏花-->
+                <dd>
+                  <img src="images/part4_jzh.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name">
+                      <h2>Marigold</h2> 
+                      <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Departure</h3>
+                     
+                  
+                  </div>
+                </dd>
+                    <!--月见草-->
+                <dd>
+                  <img src="images/part4_yjc.png" class="role_people"/>
+                  <div class="note">
+                    <div class="role_name">
+                       <h2>Primrose</h2>
+                       <h3>Floriography<span><img src="images/part4_text_ico.png"></span>Uninhibited Heart</h3>
+                    
+                   
+                  </div>
+                </dd>
+              </dl>
+            </div>
+      </div>
+    </div>
+    <!--part5-->
+    <div class="swiper-slide slide5" data-hash="slide05">
+      <div class="main_show">
+        <div class="list_wrap">
+          <div class="list_box">
+              <h2><span>NEWS</span></h2>
+              <div class="news_main">
+              
+                  <div class="news_right">
+                      <div class="news_tab">
+                              <div class="news_tab_menu">
+                                  <div class="news_tab_item active">NEWS</div>
+                                  <div class="news_tab_item">INFORMATION</div>
+                                  <div class="news_tab_item">EVENTS</div>
+                              </div>
+                              <div class="news_box">
+                                  <div class="news_tab_links no">
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="news_tab_links ">
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">111Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">222Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="news_tab_links ">
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                      <div class="news_item">
+                                          <a href="content.html">
+                                              <p class="news_title">Uninhibited Heart open the box, then will not worry to get worry to get  ! </p>
+                                              <p class="news_date">2022-05-22</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="news_tab_more">
+                                 <a href="content.html"><img src="images/list_prev.png"></a><a href="#"><img src="images/list_next.png"></a>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+       
+                
+      
+          </div>
+       </div>
+     
+      </div>
+    </div>
+    <!--part6-->
+    <div class="swiper-slide slide6" style="height:869px" data-hash="slide06">
+      <div class="swipera cf">
+          <div class="swiper-container img_swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/part6_img1.jpg"></div>
+                  <div class="swiper-slide"><img src="images/part6_img2.jpg"></div>
+                  <div class="swiper-slide"><img src="images/part6_img3.jpg"></div>
+                  <div class="swiper-slide"><img src="images/part6_img4.jpg"></div>
+                  <div class="swiper-slide"><img src="images/part6_img5.jpg"></div>
+              </div>
+              <!-- Add Pagination -->
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>   
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type='text/javascript'  src="js/qiehuan.js"></script>
+<script>
+
+  /*全屏*/
+ var Mainswiper = new Swiper('.swiper-fullscreen', {
+     slidesPerView : 'auto',
+     hashNavigation: true,
+     direction: 'vertical',
+     //mousewheel: true,
+    //  scrollbar: {
+		//   el: '.swiper-scrollbar',
+		// },
+});
+  /*点击连接到对应位置*/
+$('.characters').click(function(){
+  $('.nav_box').removeClass('active');
+  Mainswiper.slideTo(2);
+ 
+});
+
+$('.fan_top').click(function(){
+   Mainswiper.slideTo(0);
+ 
+});
+$('.flower').click(function(){
+  $('.nav_box').removeClass('active');
+  Mainswiper.slideTo(3);
+});
+
+$('.news').click(function(){
+  $('.nav_box').removeClass('active');
+  Mainswiper.slideTo(4);
+});
+
+$('.features').click(function(){
+  $('.nav_box').removeClass('active');
+  Mainswiper.slideTo(5);
+});
+
+/*part3--角色*/
+var roleswiper = new Swiper('.roles_wrap', {
+    loop : true, 
+     effect: 'fade', initialSlide: 2,
+    on:{
+      slideChangeTransitionEnd:function(roleswiper){
+        $(" .swiper_dock_list").css({"z-index":"1000"});
+        var length = $(" .swiper_dock_list li").length;
+        $(" .swiper_dock_list li img").removeClass('on');
+        $(" .swiper_dock_list li img").eq((this.activeIndex-1)%length).addClass('on');
+    }
+    }
+   
+});
+
+$(" .swiper_dock_list li").click(function(){
+    var index = $(this).index()+1;
+    roleswiper.slideTo(index);
+    $(" .swiper_dock_list li img").removeClass('on');
+    $(" .swiper_dock_list li img").eq(index-1).addClass('on');
+});
+ /*part4--花灵*/ 
+var flowerswiper = new Swiper('.part4_swiper',{
+    loop:true, initialSlide: 6,
+    slideToClickedSlide: true,
+    slidesPerView: 4,
+    freeMode: true,watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.role .list .swiper-button-next',
+      prevEl: '.role .list .swiper-button-prev',
+},
+on: {
+  resize: function () {
+          setTimeout(function(){
+            flowerswiper.update()
+          },500)
+          
+    },
+  slideChangeTransitionEnd:function(flowerswiper){ 
+        var index = this.realIndex;
+          //role.slideTo(swiper1.realIndex);
+        $('.role .content dd').eq(index).fadeIn().siblings().hide();
+          var dd = $('.role .content dd').eq(index);
+        //  console.log(dd.length)
+            $('.role .content dd').hide()
+            dd.show();
+          //  dd.find('.role_name').addClass('animated fadeInDown');
+          //  dd.find('.role_people').addClass('animated fadeInUp');
+          //  dd.find('.note').addClass('animated fadeInRight');
+        },
+      },
+});
+/*part4--花灵下的文字滚动*/
+var flower_text_swiper= new Swiper(".flower_text_swiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        freeMode: true,
+        scrollbar: {
+       
+          el: ".flower_text_swiper .swiper-scrollbar",
+        }, 
+        observer: true,
+         observeParents: true,
+        mousewheel: true,
+ });
+
+
+ /*part6--轮播*/ 
+var swiper = new Swiper('.img_swiper', {
+            loop : true,
+            pagination: {
+            el: '.swipera .swiper-pagination',
+            },
+});
+
+  
+/*part5--列表*/
+
+  $('.news_tab_menu .news_tab_item').click(function(){
+        $('.news_box').find('.news_tab_links').removeClass('no');
+        $('.news_box').find('.news_tab_links').eq($(this).index()).addClass('no');
+        $(this).addClass('active').siblings().removeClass('active')
+    })  
+
+   
+
+ </script>
+</body>
+</html>
+
+
