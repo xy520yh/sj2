@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/swiper.min.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/common.css" rel="stylesheet">
   <link href="css/colorbox.css" rel="stylesheet">
-  <title>Home</title>
+  <title>레오네: 레전드 오브 네버랜드</title>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
 </head>
@@ -40,7 +40,7 @@
   </div>   
 </div> 
 <!--弹窗单个文案提示-->
- <div class="tc_text_tip"  style="display: none;"> 
+ <div class="tc_text_tip_wrap"  style="display:none;"> 
   <div class="tc_text_tip_bg">
     <div class="closed"><img src="images/tc_closed.png" alt=""></div>
     <div class="text_wrap">
@@ -50,7 +50,7 @@
   </div>   
 </div>
 <!--弹窗带按钮文案提示-->
-<div class="tc_text_tip"  style="display: none;"> 
+<div class="tc_text_tip_wrap"  style="display: none;"> 
   <div class="tc_text_tip_bg">
     <div class="closed"><img src="images/tc_closed.png" alt=""></div>
     <div class="btn_wrap">
@@ -62,7 +62,7 @@
   </div>   
 </div> 
 <!--弹窗多组文案提示-->
- <div class="tc_text_tip"  style="display: none;"> 
+ <div class="tc_msg_bg_wrap"  style="display: none;"> 
   <div class="tc_msg_bg">
     <div class="closed"><img src="images/tc_closed.png" alt=""></div>
     <div class="msg_wrap">
@@ -90,11 +90,10 @@
         <div class="role_right">
           <div class="role_tc_title"><h4><span>검투사</span></h4></div>
           <div class="role_tc_text">
-            <p>칼날을 빼내는 순간, 칼끝이 향하는 곳. 마치 노을처럼 반짝이네.</p>
-            <p>검술사는 블레이드를 무기로 사용하며 근접 전투에 능하다. <br/>강력한 힘을 폭발시켜 모든 것을 베어낸다! </p>
+            <p>칼날을 빼내는 순간, 칼끝이 향하는 곳. <br/>마치 노을처럼 반짝이네.<br/>검술사는 블레이드를 무기로 사용하며 <br/>근접 전투에 능하다. <br/>강력한 힘을 폭발 시켜 모든 것을 <br/>베어낸다! </p>
           </div>
           <div class="role_tc_skill"><img src="images/part7_role_tc_skill1.png"></div>
-          <div class="role_tc_video"><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part7_tc_video.png"></a></div>
+         
         </div>
       </div>
     </div>
@@ -104,10 +103,10 @@
         <div class="role_right">
           <div class="role_tc_title"><h4><span>레인저</span></h4></div>
           <div class="role_tc_text">
-            <p>전장을 활공하는 매처럼 날카로운 화살 끝이 사냥감을 노린다<br/>레인저는 그 누구도 따라올 수 없는 기동성과 민첩한 몸을 가지고 있다. <br/>끝없는 게릴라 전술 속에서 적의 약점을 파악하여 일격필살을 노린다. 
+            <p>가장 천부적인 마법사만이 학자라는<br/>이름을 짊어질 수 있다.<br/>진리가 기록된 신비한 서적. 학자에게 <br/>유일무이하고도 강력한 힘을 <br/>부여한다. 
           </div>
           <div class="role_tc_skill"><img src="images/part7_role_tc_skill2.png"></div>
-          <div class="role_tc_video"><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part7_tc_video.png"></a></div>
+         
         </div>
       </div>
     </div>
@@ -117,11 +116,11 @@
         <div class="role_right">
           <div class="role_tc_title"><h4><span>학자</span></h4></div>
           <div class="role_tc_text">
-            <p>가장 천부적인 마법사만이 학자라는 이름을 짊어질 수 있다.
-            <p>진리가 기록된 신비한 서적. <br>학자에게 유일무이하고도 강력한 힘을 부여한다.</p>
+            <p>전장을 활공하는 매처럼 날카로운 화살 <br/>끝이 사냥감을 노린다'\n\n레인저는 <br/>그 누구도 따라올 수 없는 기동성과 <br/>그 누구도 따라올 수 없는 기동성과 <br/>전술 속에서 적의 약점을 파악하여
+              <br/>일격필살을 노린다. 
           </div>
           <div class="role_tc_skill"><img src="images/part7_role_tc_skill3.png"></div>
-          <div class="role_tc_video"><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part7_tc_video.png"></a></div>
+       
         </div>
       </div>
     </div>
@@ -131,10 +130,10 @@
         <div class="role_right">
           <div class="role_tc_title"><h4><span>공예가</span></h4></div>
           <div class="role_tc_text">
-            <p>'메카닉과 연금술이 어우러지는 총기의 교향곡'<br>연금술의 원리를 총포에 녹여낸 공예가. <br>사대 원소 속성을 조화롭게 사용하여 순간적으로 화력을 집중할 수 있다.
+            <p>'메카닉과 연금술이 어우러지는 <br>총기의 교향곡연금술의  <br>원리를 총포에 녹여낸 공예가. <br/>사대 원소 속성을 조화롭게 <br/>사용하여 순간적으로 화력을 <br/>집중할 수 있다.
           </div>
           <div class="role_tc_skill"><img src="images/part7_role_tc_skill4.png"></div>
-          <div class="role_tc_video"><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part7_tc_video.png"></a></div>
+          
         </div>
       </div>
     </div>
@@ -154,11 +153,16 @@
       </div> 
       <div class="nav_btn">
           <div class="nav_link">
-              <div class="link01  active link"><a href="index.html" target="_blank">HOME</a></div>
-              <div class="link02 link news"><a href="javascript:void(0)">NEWS</a></div>
-              <div class="link03 link characters" ><a href="javascript:void(0)">CHARACTERS</a></div>
-              <div class="link04 link flower"><a href="javascript:void(0)">FLOWER FAIRIES</a></div>
-              <div class="link06 link features"><a href="javascript:void(0)">FEATURES</a></div>
+              <div class="link01  active part1"><a href="index.html" target="_blank">메인</a></div>
+              <div class="link02 link part2"><a href="javascript:void(0)">사전예약</a></div>
+              <div class="link03 link part3" ><a href="javascript:void(0)">이벤트</a></div>
+              <div class="link05 link part5"><a href="javascript:void(0)">게임소개</a></div>
+              <div class="link09 link part9"><a href="javascript:void(0)">미디어</a></div>
+              <div class="link06 link features">
+                <a class="common_ico_follow" href="https://game.naver.com/lounge/The_Legend_of_Neverland/home" target="_blank"><img src="images/header_ico_game.png" alt=""/></a>
+                <a class="common_ico_fb" href="https://www.youtube.com/channel/UCLFaQOsc0oVt4UvSDTtek1w" target="_blank"><img src="images/header_ico_video.png" alt=""/></a>
+                <a class="common_ico_game" href="#" target="_blank"><img src="images/header_ico_share.png" alt=""/></a>
+              </div>
           </div>
       </div>
   </div>
@@ -167,7 +171,7 @@
   <div class="swiper-container swiper-fullscreen">
     <div class="swiper-wrapper">
         <!--part1-->
-      <div class="swiper-slide slide1">
+      <div class="swiper-slide slide1" data-hash="slide01">
         <div class="main_show">
           <div class="bgm_icon"> <img src="images/part1_music.png" id="bgm_icon"></div>
           <div class="inner">
@@ -185,7 +189,7 @@
         </div>
       </div>
         <!--part2-->
-      <div class="swiper-slide slide2">
+      <div class="swiper-slide slide2" data-hash="slide02">
         <div class="main_show">
           <div class="register_left_top">
             <div class="part2_register_slogen"><img src="images/part2_regitster_solgen.png"></div>
@@ -227,31 +231,35 @@
             </div>
         </div>
       </div>
-      <div class="swiper-slide slide3">
+      <div class="swiper-slide slide3" data-hash="slide03">
         <div class="main_show">
-          <div class="part3_slogen ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><img src="images/part3_sologen.png"></div>
-          <div class="part3_title ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><img src="images/part3_title1.png"></div>
+          <div class="part3_top">
+            <div class="part3_slogen ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><img src="images/part3_sologen.png"></div>
+            <div class="part3_title ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><img src="images/part3_title1.png"></div>
+          </div>
           <div class="part3_dc">
               <div class="dc_bg">
                 <div class="dc_20_hover dc ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.35s">
                   <img src="images/part3_dc_img_hover.png" ></div>
                 <div class=" dc_50_hover dc ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.45s">
-                  <img src="images/part3_dc_img_hover.png"></div>
+              </div>
                 <div class=" dc_70_hover dc ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.55s">
-                  <img src="images/part3_dc_img_hover.png"></div>
+                  </div>
               </div>
               <div class="dc_bg1">
                 <div class=" dc_100_hover dc ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.65s">
                   <img src="images/part3_dc_img_hover.png"></div>
                 <div class=" dc_150_hover dc ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.75s">
-                  <img src="images/part3_dc_img_hover.png"></div> 
+                  </div> 
               </div>
-              <div  class="part3_regitster ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.85s"><a href="javascript:void()"><img src="images/part3_btn.png"></a></div> 
+              <div  class="part3_regitster ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.85s"><a href="javascript:void()"><img src="images/part3_btn.png"></a></div>   
               <div  class="part3_tip ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.95s">
-                <P>*해당 이벤트는 사전예약 완료 대상자 모두에게 지급됩니다.</P>
-                <P>*보상 이미지는 추후 변경 될 수 있습니다.</P>
-              </div> 
-          </div>     
+                <img src="images/part3_tip.png">
+                <!-- <P>*해당 이벤트는 사전예약 완료 대상자 모두에게 지급됩니다.</P>
+                <P>*보상 이미지는 추후 변경 될 수 있습니다.</P> -->
+              </div>   
+          </div> 
+         
       </div>  
       
         </div>
@@ -259,36 +267,41 @@
 
       <div class="swiper-slide slide4">
         <div class="main_show">
-             <div class="part4_hd_bubble1 animated tada infinite" animat><img src="images/part4_hd_bubble1.png"></div>
-              <div class="part4_hd_bubble2 animated tada infinite"><img src="images/part4_hd_bubble2.png"></div>
-              <div class="part_hd_left">
-                  <div class="part4_hd_solgen" ><img src="images/part4_hd_solgen.png"></div>
-                  <div class="part4_hd_title"><img src="images/part4_hd_title.png"></div>
-                  <div class="part4_hd_gift"><img src="images/part4_hd_gift.png"></div>
-                  <div class="part4_hd_text"><img src="images/part4_hd_text.png"></div>
-                  <div class="part4_hd_btn"><a href="https://game.naver.com/lounge/The_Legend_of_Neverland/board/detail/851161"><img src="images/part4_hd_btn.png"></a></div>
-              </div>
+          <div class="part4_hd_solgen" ><img src="images/part4_hd_solgen.png"></div>
+          <div class="part4_bottom">
+             <div class="part4_hd_title"><img src="images/part4_hd_title.png"></div>
+            <div class="part4_hd_gift"><img src="images/part4_hd_gift.png"></div>
+            <div class="part4_hd_text"><img src="images/part4_hd_text.png"></div>
+            <div class="part4_hd_btn"><a href="https://game.naver.com/lounge/The_Legend_of_Neverland/board/detail/851161"><img src="images/part4_hd_btn.png"></a></div>
+        </div>
       </div>  
       </div>
-      <div class="swiper-slide slide5" > 
+      <div class="swiper-slide slide5" data-hash="slide05">  
         <div class="main_show">
           <div class="part5_video_slogen ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><img src="images/part5_video_title.png"></div>
-          <div class="inner">
-            <div class="content">
-              <div class="main_center">
+        
+              <div class="main_center  ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
                 <div class="swiper-container page5_swiper">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../images/part5_video_img2.jpg" data-url="#"> </div>
-                    <div class="swiper-slide"><img src="../images/part5_video_img2.jpg" data-url="#"> </div>
-                    <div class="swiper-slide"><img src="../images/part5_video_img3.jpg" data-url="#"></div>
-                    <div class="swiper-slide"><img src="../images/part5_video_img4.jpg" data-url="#"></div>
+                    <div class="swiper-slide">
+                        <a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part5_video_img1.png" data-url="#"> </a>
+                    </div>
+
+                    <div class="swiper-slide">  <a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ></a>
+
+                   <img src="images/part5_video_img2.png" data-url="#"></a> </div>
+                    <div class="swiper-slide">  <a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" >
+                     <img src="images/part5_video_img3.png" data-url="#"></a></div>
+                    <div class="swiper-slide">  <a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" >
+
+                  <img src="images/part5_video_img4.png" data-url="#"></a></div>
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <!-- <div class="swiper-pagination"></div> -->
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   </div>
               </div>
-            </div>
+         
           
                 <!-- <div class="part_video_img">
                   <div class="part_video_img1 part_video_img0 ani" style="margin-right:0.1rem" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.35s" swiper-animate-delay="0.3s"><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part5_video_img1.png"></a></div>
@@ -298,12 +311,11 @@
                 </div> -->
               </div>
            </div>     
-        </div>  
+      
 
       <div class="swiper-slide slide6 " data-hash="slide06"  > 
         <div class="part6_introduction_bg">
-          <div class="inner">
-            <div class="content">
+       
               <div class="part6_introduction_title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.25s"><img src="images/part6_introduction_title.png"></div>
               <div  class="part_introduction_text ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.25s">
                 <!-- <a href="http://www.youtube.com/embed/thf3JNxwpdU/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" target="_blank" class="video1"> -->
@@ -311,19 +323,35 @@
                     <a class="part_introduction_text_btn_play video1" id="playbtn" href="http://www.youtube.com/embed/thf3JNxwpdU/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22"><div><span></span></div></a> 
                   </div>
                </div> 
-            </div>
-          </div>     
+          
         </div>  
       </div>
       <!--role_masked-->
       <div class="swiper-slide slide7" data-hash="slide07" >
         <div class="page7_role_bg">
           <!-- <video src="media/part6_bg.mp4" class="bg-video" muted="" loop="loop" autoplay="autoplay"></video> -->
-          <div class="inner">
+          <div class="part7_top">
+            <div class="part7_role_slogen ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.25s"><img src="images/part7_role_img_03_title.png"></div>
+            <div class="part7_role_text ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><p>수시로 직업 전환이 되는 멀티 직업 시스템, <br/>
+              또다른 자유도를 안겨드립니다.</p></div>
+         </div>
+          <div class="main_center  ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s" >
+            <div class="swiper-container page7_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a onclick="openModal();currentSlide(1)" ><img src="images/part7_role_img_01.png" data-url="#"> </a></div>
+                <div class="swiper-slide"><a onclick="openModal();currentSlide(2)" ></a><img src="images/part7_role_img_02.png" data-url="#"> </a></div>
+                <div class="swiper-slide"><a onclick="openModal();currentSlide(3)" ></a><img src="images/part7_role_img_03.png" data-url="#"></a></div>
+                <div class="swiper-slide"><a onclick="openModal();currentSlide(4)" ></a><img src="images/part7_role_img_04.png" data-url="#"></a></div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              </div>
+          </div>
+          <!-- <div class="inner">
             <div class="content">
               <div class="part_video_left">
-                <div class="part7_role_slogen ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.25s"><img src="images/part7_role_img_03_title.png"></div>
-                <div class="part7_role_text ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><p>수시로 직업 전환이 되는 멀티 직업 시스템, 또다른 자유도를 안겨드립니다.</p></div>
+              
                 <div class="part_video_img">
                 <div class="part_video_img1 ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.35s"><a onclick="openModal();currentSlide(1)" ><img src="images/part7_role_img_01.png"></a></div>
                 <div class="part5_video_img2 ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.45s"><a  onclick="openModal();currentSlide(2)" ><img src="images/part7_role_img_02.png"></a></div>
@@ -332,41 +360,44 @@
               </div>
               </div>
             </div>
-          </div>     
+          </div>      -->
         </div>
       </div>
         <!--part_role_Character-->
-        
       <div class="swiper-slide slide8" data-hash="slide08" > 
-          <div class="page8_hualing_bg">
-            <div class="inner">
+          <div class="main_show">
+            <div class="part8_top">
+              <div class="part8_solgen"><img src="images/part8_solgen.png"></div> 
+              <div class="part8_title">
+                <P>수만 가지의 전투 포메이션!<br/>
+                  나만의 정령으로 다양한 전투와 레오네 세계로!</P>
+              </div> 
+            </div>
             <div class="role">
-              <div class="part4_fw"><img src="images/part8_solgen.png"></div> 
-              <div class="list">
-                <div class="swiper-container part4_swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/part8_bdl_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_sly_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_jg_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_linglan_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_sl_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_sc_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_ct_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_zyh_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_jzh_small.png" /></div>
-                    <div class="swiper-slide"><img src="images/part8_yjc_small.png" /></div>
+                <div class="part8_menu">
+                  <div class="list">
+                    <div class="swiper-container part8_swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/part8_bdl_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_sly_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_jg_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_linglan_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_sl_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_sc_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_ct_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_zyh_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_jzh_small.png" /></div>
+                        <div class="swiper-slide"><img src="images/part8_yjc_small.png" /></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
               </div>
               <dl class="content_tro">
                 <!--并蒂莲-->
               <dd>
-              <!-- <img src="images/part8_zyh.png" class="role_people"/>  -->
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                 <img src="images/part4_bdl.png" class="role_people"/> 
                 <div class="note">
                   <div class="scroll">
                     <h4><span>트윈 로터스</span></h4>
@@ -387,9 +418,8 @@
               </dd>
                 <!-- 十六夜-->
                 <dd>
-                  <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                  <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                    나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                  <img src="images/part4_sly.png" class="role_people"/> 
+            
                   <div class="note">
                     <div class="scroll">
                       <h4><span>체스트넛 로즈</span></h4>
@@ -406,9 +436,8 @@
                 </dd>
                 <!--桔梗-->
                 <dd>
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                  <img src="images/part4_jg.png" class="role_people"/> 
+             
                 <div class="note">
                   <div class="scroll">
                     <h4><span>정령 시스템</span></h4>
@@ -426,9 +455,8 @@
                 </dd>
                     <!--铃兰-->
               <dd>
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                <img src="images/part4_ll.png" class="role_people"/> 
+              
                 <div class="note">
                   <div class="scroll">
                     <h4><span>메이벨스</span></h4>
@@ -447,10 +475,8 @@
             
                 <!--睡莲-->
               <dd>
-                
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                <img src="images/part4_sl.png" class="role_people"/> 
+               
                 <div class="note">
                   <div class="scroll">
                     <h4><span>님페이아</span></h4>
@@ -469,9 +495,8 @@
               </dd>
               <!--山茶cuowu-->
               <dd>
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                <img src="images/part4_sc.png" class="role_people"/> 
+          
                 <div class="note">
                   <div class="scroll">
                     <h4><span>카멜리아</span></h4>
@@ -486,10 +511,8 @@
               </dd>
                   <!--刺桐-->
               <dd>
-                
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                <img src="images/part4_ct.png" class="role_people"/> 
+       
                 <div class="note">
                   <div class="scroll">
                     <h4><span>에리스리나</span></h4>
@@ -508,9 +531,8 @@
                 </div>
               <dd>
                 <!--紫阳花-->
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div>  
+                <img src="images/part4_zyh.png" class="role_people"/> 
+            
                 <div class="note">
                   <div class="scroll">
                     <h4><span>수국</span></h4>
@@ -528,9 +550,8 @@
               </dd>
               <!--金盏花-->
               <dd>
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                <img src="images/part4_jzh.png" class="role_people"/> 
+              
                 <div class="note">
                   <div class="scroll">
                     <h4><span>메리골드</span></h4>
@@ -544,10 +565,8 @@
               </dd>
                 <!--月见草-->
               <dd>
-                
-                <div class="role_name">   <h4><span><img src="images/part8_mzsh_title.png"></span></h4></div> 
-                <div class="role_text">수만 가지의 전투 포메이션! <br/>
-                  나만의 정령으로 다양한 전투와 레오네 세계로!</div> 
+                <img src="images/part4_yjc.png" class="role_people"/> 
+               
                 <div class="note">
                   <div class="scroll">
                     <h4><span>프림로즈</span></h4>
@@ -567,29 +586,24 @@
               </dd>
             </dl>
             </div>
-          </div>
-  
-         
         </div>
     </div> 
     <!--part_videomain-->
       <div class="swiper-slide slide9"  data-hash="slide09">
-        <div class="part9_video_bg">
-          <div class="inner">
-              <div class="content">
-              
+        <div class="main_show">
               <div class="part9_video_title  ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.35s"><img src="images/part9_title.png"></div>
               <div  class="item ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.45s">
                   <ul >  
                     <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_01.png"></a></li>
                     <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_02.png"></a></li>
+                  </ul>
+                  <ul >  
                     <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_01.png"></a></li>
+                    <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_02.png"></a></li>
                   </ul>
                   <ul>
-                    <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_02.png"></a></li>
                     <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_03.png"></a></li>
-                    <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_03.png"></a></li>
-                  
+                    <li><a class="videoBtn  video1" href="http://www.youtube.com/embed/UikZrl0WbdA/?autoplay=1&loop=1;controls=0&amp;showinfo=0&fmt=22" ><img src="images/part9_video_03.png"></a></li>            
                   </ul>
               </div>
               <div class="footer_links ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.55s">
@@ -603,12 +617,8 @@
                 <div class="footer_bq">
                   <P><img src="images/footer_09.png"></P>
               </div>
-            </div>
-            
-              
-          </div>
-      </div>
-    </div>
+              </div>
+        </div>
       </div>
     </div>
    
@@ -641,6 +651,64 @@
         },
       },
     });
+
+$('.part1').click(function(){
+  swiper.slideTo(0);
+  ('.nav_box').removeClass('active');
+});
+$('.part2').click(function(){
+  console.log('222')
+  swiper.slideTo(1);
+  ('.nav_box').removeClass('active');
+});
+$('.part3').click(function(){
+  swiper.slideTo(2);
+  ('.nav_box').removeClass('active');
+});
+
+$('.part5').click(function(){
+  swiper.slideTo(4);
+  ('.nav_box').removeClass('active');
+ 
+});
+$('.part9').click(function(){
+  swiper.slideTo(8);
+  ('.nav_box').removeClass('active');
+ 
+});
+
+
+     /*part4--花灵*/ 
+var flowerswiper = new Swiper('.part8_swiper',{
+    loop:true, initialSlide: 6,
+    slideToClickedSlide: true,
+    slidesPerView: 4,
+    freeMode: true,watchSlidesProgress: true,
+    navigation: {
+      nextEl: '.part8_menu  .swiper-button-next',
+      prevEl: '.part8_menu .swiper-button-prev',
+},
+on: {
+  resize: function () {
+          setTimeout(function(){
+            flowerswiper.update()
+          },500)
+          
+    },
+  slideChangeTransitionEnd:function(flowerswiper){ 
+        var index = this.realIndex;
+          //role.slideTo(swiper1.realIndex);
+        $('.role .content_tro dd').eq(index).fadeIn().siblings().hide();
+          var dd = $('.role .content_tro dd').eq(index);
+        //  console.log(dd.length)
+            $('.role .content_tro dd').hide()
+            dd.show();
+          //  dd.find('.role_name').addClass('animated fadeInDown');
+          //  dd.find('.role_people').addClass('animated fadeInUp');
+          //  dd.find('.note').addClass('animated fadeInRight');
+        },
+      },
+});
 // 特色
 var swiper = new Swiper('.page5_swiper', {
     effect: 'coverflow',
@@ -660,6 +728,26 @@ var swiper = new Swiper('.page5_swiper', {
     nextEl: '.page5_swiper .swiper-button-next',
     prevEl: '.page5_swiper .swiper-button-prev',
 });
+// 特色
+var swiper = new Swiper('.page7_swiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    loop : true,
+    initialSlide :0,
+    navigation: {
+        nextEl: '.page7_swiper .swiper-button-next',
+        prevEl: '.page7_swiper .swiper-button-prev',
+        },
+    nextEl: '.page7_swiper .swiper-button-next',
+    prevEl: '.page7_swiper .swiper-button-prev',
+});
+
 
     $(function () {
     
@@ -672,6 +760,37 @@ var swiper = new Swiper('.page5_swiper', {
       })
     })
 
+    //角色弹窗	
+function openModal() {
+			document.getElementById('myModal').style.display = "block";
+      document.getElementById('masked').style.display = "block";
+}
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+  document.getElementById('masked').style.display = "none";
+}
+		
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
 //视频弹窗
 $(function(){
     $(".video1").colorbox({iframe:true, innerWidth:380, innerHeight:300});	
